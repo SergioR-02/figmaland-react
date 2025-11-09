@@ -5,6 +5,32 @@
   box-sizing: border-box;
 }
 
+/* Local font-face declarations
+   Place your downloaded font files into src/assets/fonts/
+   Recommended filenames (adjust if yours differ):
+     - GraphikTrial-Regular.woff2
+     - GraphikTrial-Regular.woff
+     - GraphikTrial-Bold.woff2
+     - GraphikTrial-Bold.woff
+*/
+@font-face {
+  font-family: 'Graphik Trial';
+  src: url('/src/assets/fonts/GraphikTrial-Regular.woff2') format('woff2'),
+       url('/src/assets/fonts/GraphikTrial-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Graphik Trial';
+  src: url('/src/assets/fonts/GraphikTrial-Bold.woff2') format('woff2'),
+       url('/src/assets/fonts/GraphikTrial-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --graphik: "Graphik Trial", sans-serif;
   --blue: #2091f9;
@@ -13,4 +39,38 @@
 body {
   font-family: var(--graphik);
   color: #374754;
+}
+
+/* Clases de utilidad globales */
+.desktop {
+  display: none;
+  position: fixed;
+}
+
+.mobile {
+  display: block;
+  position: static;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Media queries globales para desktop/mobile */
+@media (min-width: 900px) {
+  .desktop {
+    display: block;
+    position: static;
+  }
+  
+  .mobile {
+    display: none;
+    position: fixed;
+  }
+  
+  .container {
+    width: 100%;
+  }
 }
