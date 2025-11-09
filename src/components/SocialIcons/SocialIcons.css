@@ -1,0 +1,27 @@
+
+.hero__nav__icons:not(.desktop) {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.hero__nav__icons a {
+  transition: transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.hero__nav__icons a:hover {    
+    transform: scale(1.1);
+}
+
+@media (min-width: 900px) {
+
+  .hero__nav__icons.desktop {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
+
+
