@@ -1,0 +1,16 @@
+/* Estilos globales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --graphik: "Graphik Trial", sans-serif;
+  --blue: #2091f9;
+}
+
+body {
+  font-family: var(--graphik);
+  color: #374754;
+}
