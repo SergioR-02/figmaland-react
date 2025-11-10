@@ -15,8 +15,7 @@
 */
 @font-face {
   font-family: 'Graphik Trial';
-  src: url('/src/assets/fonts/GraphikTrial-Regular.woff2') format('woff2'),
-       url('/src/assets/fonts/GraphikTrial-Regular.woff') format('woff');
+  src: url('/public/fonts/Graphik-Regular-Trial.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -24,12 +23,12 @@
 
 @font-face {
   font-family: 'Graphik Trial';
-  src: url('/src/assets/fonts/GraphikTrial-Bold.woff2') format('woff2'),
-       url('/src/assets/fonts/GraphikTrial-Bold.woff') format('woff');
+  src: url('/public/fonts/Graphik-Black-Trial.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+
 
 :root {
   --graphik: "Graphik Trial", sans-serif;
@@ -53,7 +52,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
   overflow: hidden;
 }
