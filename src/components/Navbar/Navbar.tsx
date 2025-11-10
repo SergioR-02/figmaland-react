@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         aria-label="Toggle menu"
       >
         <img
-          src="/img/menu-alt-right_mobil.svg"
+          src="/src/assets/images/icon_menu.svg"
           alt="img menu"
           className="mobile"
         />

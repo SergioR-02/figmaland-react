@@ -1,9 +1,9 @@
 import ContactForm from '../ContactForm/ContactForm';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import SectionTexts from '../SectionTexts/SectionTexts';
-import iconLocation from '../assets/images/icon_location.svg';
-import iconPhone from '../assets/images/icon_phone.svg';
-import iconMail from '../assets/images/icon_mail.svg';
+import iconLocation from '../../assets/images/icon_location.svg';
+import iconPhone from '../../assets/images/icon_phone.svg';
+import iconMail from '../../assets/images/icon_mail.svg';
 import './Contact.css';
 
 const Contact = () => {
