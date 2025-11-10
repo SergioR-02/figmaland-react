@@ -1,0 +1,28 @@
+.section__information__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section__information__card .section__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section__information__card .section__item img {
+  width: 3.5rem;
+  height: auto;
+}
+
+.section__infromation__title {
+  font-weight: 700;
+  font-size: 1.25em;
+  color: #252B42;
+}
+
+.section__infromation__paragraf {
+  font-weight: 400;
+  color: #374754;
+}
+
