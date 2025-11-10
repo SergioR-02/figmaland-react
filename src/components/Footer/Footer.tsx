@@ -1,5 +1,7 @@
 import SocialIcons from '../SocialIcons/SocialIcons';
 import './Footer.css';
+import iconLocationWhite from '../../assets/images/icon_location._white.svg';
+import iconPhoneWhite from '../../assets/images/icon_phone_white.svg';
 
 const Footer = () => {
   return (
@@ -67,13 +69,13 @@ const Footer = () => {
         <div>
           <div className="footer__contacs">
             <div className="footer__contactMethods">
-              <img src="/src/assets/images/icon_location._white.svg" alt="Location icon" />
+              <img src={iconLocationWhite} alt="Location icon" />
               <h6 className="footer__infromation__title">
                 7480 Mockingbird Hill undefined
               </h6>
             </div>
             <div className="footer__contactMethods">
-              <img src="/src/assets/images/icon_phone_white.svg" alt="Phone icon" />
+              <img src={iconPhoneWhite} alt="Phone icon" />
               <h6 className="footer__infromation__title">(239) 555-0108</h6>
             </div>
             <SocialIcons className="footer__icons"/>

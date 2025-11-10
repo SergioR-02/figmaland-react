@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import './Navbar.css';
 import SocialIcons from '../SocialIcons/SocialIcons';
+import iconLogo from '../../assets/images/icon_logo.svg';
+import iconMenu from '../../assets/images/icon_menu.svg';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +28,7 @@ const Navbar: React.FC = () => {
 
         <figure>
           <img
-              src="/src/assets/images/icon_logo.svg"
+              src={iconLogo}
               alt="FigmaLand logo"
               className="hero__figma"
             />
@@ -39,7 +41,7 @@ const Navbar: React.FC = () => {
         aria-label="Toggle menu"
       >
         <img
-          src="/src/assets/images/icon_menu.svg"
+          src={iconMenu}
           alt="img menu"
           className="mobile"
         />

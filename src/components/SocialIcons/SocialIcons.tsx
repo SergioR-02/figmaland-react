@@ -18,7 +18,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = '', color = 'whit
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={`/src/assets/images/icon_twiter_${suffix}.svg`} alt="X" />
+        <img src={new URL(`../../assets/images/icon_twiter_${suffix}.svg`, import.meta.url).href} alt="X" />
       </a>
       <a
         href="https://www.facebook.com/UNALOficial/?locale=es_LA"
@@ -26,7 +26,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = '', color = 'whit
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={`/src/assets/images/icon_facebook_${suffix}.svg`} alt="Facebook" />
+        <img src={new URL(`../../assets/images/icon_facebook_${suffix}.svg`, import.meta.url).href} alt="Facebook" />
       </a>
       <a
         href="https://www.linkedin.com/school/universidadnacionaldecolombia/posts/?feedView=all"
@@ -34,7 +34,7 @@ const SocialIcons: React.FC<SocialIconsProps> = ({ className = '', color = 'whit
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={`/src/assets/images/icon_linkedin_${suffix}.svg`} alt="LinkedIn" />
+        <img src={new URL(`../../assets/images/icon_linkedin_${suffix}.svg`, import.meta.url).href} alt="LinkedIn" />
       </a>
     </div>
   );

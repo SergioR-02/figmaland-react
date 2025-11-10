@@ -1,6 +1,11 @@
 import './Features.css';
 import FeatureCard from '../FeatureCard/FeatureCard';
 import SectionTexts from '../SectionTexts/SectionTexts';
+import mobileVideo from '../../assets/videos/mobile.mp4';
+import desktopVideo from '../../assets/videos/desktop.mp4';
+import iconOpentype from '../../assets/images/icon_opentype.svg';
+import iconDesign from '../../assets/images/icon_design.svg';
+import iconFastest from '../../assets/images/icon_fastest.svg';
 
 const Features = () => {
   return (
@@ -13,12 +18,12 @@ const Features = () => {
             subtitleDesktop={'Most calendars are designed for teams. Slate is designed for freelancers'}
           />
           <video className="section__video mobile" controls>
-            <source src="/src/assets/videos/mobile.mp4" type="video/mp4" />
+            <source src={mobileVideo} type="video/mp4" />
           </video>
 
           <section className="section__information">
             <FeatureCard
-              iconSrc="/src/assets/images/icon_opentype.svg"
+              iconSrc={iconOpentype}
               title="OpenType features Variable fonts"
               description={
                 'Slate helps you see how many more days you need to work to reach your financial goal.'
@@ -26,7 +31,7 @@ const Features = () => {
             />
 
             <FeatureCard
-              iconSrc="/src/assets/images/icon_design.svg"
+              iconSrc={iconDesign}
               title="Design with real data"
               description={
                 'Slate helps you see how many more days you need to work to reach your financial goal.'
@@ -34,7 +39,7 @@ const Features = () => {
             />
 
             <FeatureCard
-              iconSrc="/src/assets/images/icon_fastest.svg"
+              iconSrc={iconFastest}
               title="Fastest way to take action"
               description={
                 'Slate helps you see how many more days you need to work to reach your financial goal.'
@@ -43,7 +48,7 @@ const Features = () => {
           </section>
 
           <video className="section__video desktop" controls>
-            <source src="/src/assets/videos/desktop.mp4" type="video/mp4" />
+            <source src={desktopVideo} type="video/mp4" />
           </video>
         </div>
       </section>

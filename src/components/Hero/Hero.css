@@ -1,5 +1,5 @@
 .hero {
-  background-image: url("/src/assets/images/header_mobile.svg");
+  background-image: url("../../assets/images/header_mobile.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -57,7 +57,7 @@
 
 @media (min-width: 418px) {
   .hero {
-    background-image: url("/src/assets/images/header_desktop.svg");
+    background-image: url("../../assets/images/header_desktop.svg");
     min-height: 107vh;
   }
 }
